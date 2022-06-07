@@ -5,6 +5,21 @@
     font-family: 'Exo', sans-serif;
 } 
 
+#nosotros a {
+    text-decoration: none;
+    color: darkslategrey;
+}
+
+#nosotros h2 {
+    text-decoration: none;
+    color: darkslategrey;
+}
+
+#nosotros h4 {
+    text-decoration: none;
+    color: darkslategrey;
+}
+
 header {
     
     background-color: white;
@@ -19,8 +34,6 @@ header {
 }
 
 #inicio {
-    /* background-image: url(../img/deco2.png); */
-    grid-area: inicio;
     height: 100vh;
     background-image: url(../img/deco2.png);
     background-position: center;
@@ -40,4 +53,11 @@ header {
 #macetas {
     background-color: rgb(220,249,228 );
     text-align: center;
+}
+
+#nosotrosp {
+    height: 100vh;
+    background-image: url(../img/deco.jpeg);
+    background-position: center;
+    background-size: cover;
 }
