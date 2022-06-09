@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./scss/style.css">
     <link rel="shortcut icon" href="./img/logo.jpeg" type="image/x-icon"> <!-- logo en pestaña -->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -33,7 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#trabajos">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#trabajos">Catálogo</a></li>
                         <li class="nav-item"><a class="nav-link" href="#taller">Taller</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contacto">Contactanos</a></li>
                     </ul>
@@ -87,109 +87,70 @@
             <h2 class="fw-bolder mb-4">Productos</h2>
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                 <div class="col mb-5 animate__animated animate__jackInTheBox">
-                    <div class="card h-100">
+                    <div class="card card-wrap">
                         <!-- Product image-->
                         <img class="card-img-top" src="./img/macetas1.png" alt="..." />
                         <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!-- Product name-->
-                                <h5 class="fw-bolder">Macetas</h5>
-                                <!-- Product price-->
-                                $40.00 - $80.00
+                       
+                            <div class="text-center card-texto">
+                                <a href="./pages/trabajos.html#macetas">MACETAS</a>
                             </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto"
-                                    href="./pages/trabajos.html#macetas">Ver opciones</a>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
+
                 <div class="col mb-5 animate__animated animate__jackInTheBox">
-                    <div class="card h-100">
-                        <!-- Sale badge-->
-                        <!-- <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div> -->
+                    <div class="card card-wrap">
                         <!-- Product image-->
                         <img class="card-img-top" src="./img/luminarias.png" alt="..." />
                         <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!-- Product name-->
-                                <h5 class="fw-bolder">Luminarias</h5>
-                                <!-- Product reviews-->
-                                <div class="d-flex justify-content-center small text-warning mb-2">
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                </div>
-                                <!-- Product price-->
-                                <span class="text-muted text-decoration-line-through">$20.00</span>
-                                $18.00
+                       
+                            <div class="text-center card-texto">
+                                <a href="./pages/trabajos.html#luminarias">LUMINARIAS</a>
                             </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver opciones</a>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
+
                 <div class="col mb-5 animate__animated animate__jackInTheBox">
-                    <div class="card h-100">
-                        <!-- Sale badge-->
-                        <!-- <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
-                        </div> -->
-                        <!-- Product image-->
-                        <img class="card-img-top" src="./img/relojes.png" alt="..." />
-                        <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!-- Product name-->
-                                <h5 class="fw-bolder">Relojes</h5>
-                                <!-- Product price-->
-                                <span class="text-muted text-decoration-line-through">$50.00</span>
-                                $25.00
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver opciones</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-5 animate__animated animate__jackInTheBox">
-                    <div class="card h-100">
+                    <div class="card card-wrap">
                         <!-- Product image-->
                         <img class="card-img-top" src="./img/velas.png" alt="..." />
                         <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!-- Product name-->
-                                <h5 class="fw-bolder">Velas</h5>
-                                <!-- Product reviews-->
-                                <div class="d-flex justify-content-center small text-warning mb-2">
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                </div>
-                                <!-- Product price-->
-                                $40.00
+                       
+                            <div class="text-center card-texto">
+                                <a href="./pages/trabajos.html#macetas">VELAS</a>
                             </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver opciones</a>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
+
+                <div class="col mb-5 animate__animated animate__jackInTheBox">
+                    <div class="card card-wrap">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="./img/relojes.png" alt="..." />
+                        <!-- Product details-->
+                       
+                            <div class="text-center card-texto">
+                                <a href="./pages/trabajos.html#macetas">RELOJES</a>
+                            </div>
+                       
+                    </div>
+                </div>
+
+                <div class="col mb-5 animate__animated animate__jackInTheBox">
+                    <div class="card card-wrap">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="./img/posa-vasos.png" alt="..." />
+                        <!-- Product details-->
+                       
+                            <div class="text-center card-texto">
+                                <a href="./pages/trabajos.html#macetas">POSA VASOS</a>
+                            </div>
+                       
+                    </div>
+                </div>
+    
             </div>
         </div>
     </section>

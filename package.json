@@ -1,0 +1,29 @@
+{
+  "name": "deco_forma",
+  "version": "1.0.0",
+  "description": "deco_forma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-cs": "node-sass --include-path scss scss/style.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnaLiaGitHub/deco-forma.git"
+  },
+  "keywords": [
+    "clavegit"
+  ],
+  "author": "analia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnaLiaGitHub/deco-forma/issues"
+  },
+  "homepage": "https://github.com/AnaLiaGitHub/deco-forma#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
