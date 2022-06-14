@@ -10,19 +10,19 @@ a {
   text-decoration: none;
 }
 
-#nosotros a {
-  text-decoration: none;
-  color: darkslategrey;
-}
-
 #nosotros h2 {
   text-decoration: none;
-  color: darkslategrey;
+  color: darkslategray;
 }
 
 #nosotros h4 {
   text-decoration: none;
-  color: darkslategrey;
+  color: darkslategray;
+}
+
+#nosotros a {
+  text-decoration: none;
+  color: darkslategray;
 }
 
 header {
@@ -123,5 +123,10 @@ header {
   background-image: url(../img/deco.jpeg);
   background-position: center;
   background-size: cover;
+}
+
+#taller {
+  background-color: #fdfee0;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
