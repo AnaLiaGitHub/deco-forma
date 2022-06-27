@@ -6,23 +6,80 @@
     font-family: 'Exo', sans-serif;
 }
 
+$colorViolet: #f5dcf9;
+$colorBlue: #dce4f9;
+$colorGreen: #dcf9e4;
+$colorYellow: #fdfee0;
+$colorOrange: #fff4e1;
+$colorRed: #ffe4e1;
+
 a {
     text-decoration: none;
 }
 
-#nosotros h2 {
-    text-decoration: none;
-    color: darkslategray;
+h1 {
+    font-weight: 600px;
+    color: #003166;
 }
 
-#nosotros h4 {
-    text-decoration: none;
-    color: darkslategray;
+#inicio {
+    height: 100vh;
+    background-image: url(../img/deco2.png);
+    background-position: center;
+    background-size: cover;
+
+    h1 {
+        font-size: 3rem;
+    }
 }
 
-#nosotros a {
-    text-decoration: none;
-    color: darkslategray;
+#nosotros {
+    background: linear-gradient(90deg, $colorViolet 0%, $colorBlue 20%, $colorGreen 40%, $colorYellow 60%, $colorOrange 80%, $colorRed 100%);
+    text-align: center;
+
+    h2 {
+        text-decoration: none;
+        color: darkslategray;
+    }
+
+    h4 {
+        text-decoration: none;
+        color: darkslategray;
+    }
+
+    a {
+        text-decoration: none;
+        color: darkslategray;
+    }
+
+}
+
+$colores: (
+    myViolet: $colorViolet,
+    myBlue: $colorBlue,
+    myGreen: $colorGreen,
+    myYellow: $colorYellow
+);
+
+.nav-link.my-violet {
+    color: map-get($colores, myViolet);
+}
+
+.nav-link.my-blue {
+    color: map-get($colores, myBlue);
+}
+
+.nav-link.my-green {
+    color: map-get($colores, myGreen);
+}
+
+.nav-link.my-yellow {
+    color: map-get($colores, myYellow);
+}
+
+.hover-colores {
+    background: linear-gradient(90deg, $colorViolet 0%, $colorBlue 20%, $colorGreen 40%, $colorYellow 60%, $colorOrange 80%, $colorRed 100%);
+    color: darkslategrey;
 }
 
 header {
@@ -33,87 +90,100 @@ header {
     width: 100%;
     /* box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%); */
     opacity: 0.8;
-    /* box-shadow: 0px 0px 30px rgb(127 137 161 / 30%); */
-}
 
-#inicio {
-    height: 100vh;
-    background-image: url(../img/deco2.png);
-    background-position: center;
-    background-size: cover;
-}
+    .navbar-brand:hover {
+        @extend .hover-colores;
+        padding: 5px
+    }
 
-#nosotros {
-    background-color: mistyrose;
-    text-align: center;
+    .nav-link:hover {
+        @extend .hover-colores
+    }
+
 }
 
 #trabajos {
-    background-color: #dcf9e4;
+    background-color: $colorGreen;
     text-align: center;
-}
 
-#trabajos .justify-content-center {
-    align-items: center;
-}
+    .justify-content-center {
+        align-items: center;
+    }
 
-#trabajos .card-texto {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    text-align: center;
-    opacity: 0;
-    -webkit-transition: 0.2s linear;
-    transition: 0.2s linear;
-}
+    .card-texto {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+        opacity: 0;
+        -webkit-transition: 0.2s linear;
+        transition: 0.2s linear;
+    }
 
-#trabajos .card-wrap:hover {
-    background: #003166;
-    border: none;
+    .card-wrap:hover {
+        /* background: #003166;
+        border: none; */
+        @extend .hover-colores
+    }
+
 }
 
 #trabajos .card-wrap:hover .card-texto {
     opacity: 1;
+
 }
 
 #trabajos .card-wrap:hover img {
     opacity: 0.4;
 }
 
-#trabajos .card-wrap .card-texto a {
-    color: #fff;
-    text-decoration: none;
+#trabajos .card-wrap .card-texto {
+    a {
+        color: darkslategrey;
+        font-weight: 800;
+        font-size: 2rem;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: whitesmoke;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        -webkit-text-stroke: 1px darkslategrey;
+    }
 }
 
-#trabajos .card-wrap .card-texto a:hover {
-    color: #007bff;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+@mixin catalogo ($bg) {
+    text-align: center;
+    background-color: $bg;
 }
 
 #macetas {
-    background-color: #dcf9e4;
-    text-align: center;
+    @include catalogo($colorGreen);    
+    padding-top: 100px;
 }
 
-#luminarias {
-    background-color: #f5dcf9;
-    text-align: center;
+#luminarias-relojes {
+    @include catalogo($colorViolet);
+}
+
+#posavasos-velas {
+    @include catalogo($colorBlue);
 }
 
 #nosotrosp {
@@ -124,8 +194,59 @@ header {
 }
 
 #taller {
-    background-color: #fdfee0;
+    background-color: $colorYellow;
     text-align: center;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
 }
 
 /*# sourceMappingURL=styls.css.map */
