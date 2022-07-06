@@ -24,8 +24,8 @@
 
     <header id="header">
         <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container px-5">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
+       <!--      <div class="container px-5"> -->
                 <a class="navbar-brand" href="../index.html#inicio">Deco.Forma</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -34,36 +34,33 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="../index.html#nosotros">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Productos</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Catálogo</a>
+                            <ul class="bg-dark dropdown-menu" aria-labelledby="dropdown01">
+                              <li class="nav-item"><a class="dropdown-item nav-link" href="#macetas">Macetas</a></li>
+                              <li class="nav-item"><a class="dropdown-item nav-link" href="#relojes">Relojes</a></li>
+                              <li class="nav-item"><a class="dropdown-item nav-link" href="#luminarias">Luminarias</a></li>
+                              <li class="nav-item"><a class="dropdown-item nav-link" href="#luminarias">Velas</a></li>
+                              <li class="nav-item"><a class="dropdown-item nav-link" href="#luminarias">Posa vasos</a></li>
+                              <li class="nav-item"><a class="dropdown-item nav-link" href="#luminarias">Contenedores</a></li>
+                            </ul>
+                          </li>
                         <li class="nav-item"><a class="nav-link" href="#!">Taller</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Contactanos</a></li>
                     </ul>
                 </div>
-            </div>
+        <!--     </div> -->
         </nav>
     </header>
-    <!--    <section id="nosotros"> -->
-    <!-- <div id="nosotros" class="caja">
-            <div class="contenedor box">
-                <br>
-                <h2>NUESTRA INSPIRACION</h2>
-                <br>
-                <div>
-                    <h3> <a href="./pages/nosotros.html">¡Acompáñame y descubre que el cemento no es sólo gris!</a></h3>
-                </div>
-            </div>
-        </div> -->
-    <!--   </section> -->
 
     <section id="macetas">
-        <h1>NUESTROS TRABAJOS</h1>
-        <div class="container px-4 px-lg-5 mt-5">
-            <h2 class="fw-bolder mb-4">Macetas</h2>
-            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                <div class="col mb-5 animate__animated animate__jackInTheBox">
+        <div class="container py-5">
+            <h2 class="fw-bolder pt-3 mb-4">Macetas</h2>
+            <div class="row gx-4 gx-lg row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-3 animate__animated animate__jackInTheBox">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="../img/macetas1.png" alt="..." />
+                        <img class="card-img-top" src="../img/maceta_marmolada.jpg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -75,12 +72,39 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><p>Macetas para lucir tus plantas.</p>
+                            <div class="text-center">
+                                <p>Macetas para lucir tus plantas.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col mb-5 animate__animated animate__jackInTheBox">
+                <div class="col mb-3 animate__animated animate__jackInTheBox">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="../img/macetas1.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h6><strong>Medidas:</strong> 9,5cm de alto x 10,5cm de diámetro.
+                                    Cuentan con desagüe.
+                                    Disponibles en nuestros 5 colores.</h6>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">$50.00</span>
+                                $25.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <!-- <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><p>Macetas para lucir tus plantas.</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col mb-3 animate__animated animate__jackInTheBox">
                     <div class="card h-100">
                         <!-- Sale badge-->
                         <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
@@ -99,12 +123,13 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><p>Macetas para lucir tus plantas.</p>
+                            <div class="text-center">
+                                <p>Macetas para lucir tus plantas.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col mb-5 animate__animated animate__jackInTheBox">
+                <div class="col mb-3 animate__animated animate__jackInTheBox">
                     <div class="card h-100">
                         <!-- Product image-->
                         <img class="card-img-top" src="../img/macetas1.png" alt="..." />
@@ -127,7 +152,8 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><p>Macetas para lucir tus plantas.</p>
+                            <div class="text-center">
+                                <p>Macetas para lucir tus plantas.</p>
                             </div>
                         </div>
                     </div>
@@ -136,9 +162,92 @@
         </div>
     </section>
 
-    <section id="luminarias-relojes" class="py-5">
-        <div class="container px-4 px-lg-5 mt-5">
-            <h2 class="fw-bolder mb-4">Luminarias</h2>
+    <section id="relojes">
+        <div class="container py5">
+            <h2 class="fw-bolder pt-5 mb-4">Relojes</h2>
+            <div class="row gx-4 gx-lg row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-3 animate__animated animate__jackInTheBox">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="../img/relojes.png" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Chica</h5>
+                                <!-- Product price-->
+                                $40.00 - $80.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <p><strong>Medida:</strong>20cm.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3 animate__animated animate__jackInTheBox">
+                    <div class="card h-100">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="../img/reloj2.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Mediana</h5>
+                                <!-- Product price-->
+                                <span class="text-muted text-decoration-line-through">$50.00</span>
+                                $25.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <p>Apoyo en madera.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3 animate__animated animate__jackInTheBox">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="../img/reloj3.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Grande</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <!-- <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div> -->
+                                </div>
+                                <!-- Product price-->
+                                $40.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <p>Con o sin las guías de números y en el color que mas te guste.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="luminarias">
+        <div class="container py5">
+            <h2 class="fw-bolder py-5 mb-3">Luminarias</h2>
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                 <div class="col mb-5 animate__animated animate__jackInTheBox">
                     <div class="card h-100">
@@ -155,7 +264,8 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><p>Varios colores.</p>
+                            <div class="text-center">
+                                <p>Varios colores.</p>
                             </div>
                         </div>
                     </div>
@@ -179,7 +289,8 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><p>Super delicadas.</p>
+                            <div class="text-center">
+                                <p>Super delicadas.</p>
                             </div>
                         </div>
                     </div>
@@ -207,7 +318,8 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><p>Y super originales!</p>
+                            <div class="text-center">
+                                <p>Y super originales!</p>
                             </div>
                         </div>
                     </div>
@@ -216,7 +328,7 @@
         </div>
     </section>
 
-    <section id="posavasos-velas" class="py-5">
+    <section id="posavasos-velas" class="py-3">
         <div class="container px-4 px-lg-5 mt-5">
             <h2 class="fw-bolder mb-4">Velas y Posa vasos</h2>
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
@@ -235,7 +347,8 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><p>Varios colores.</p>
+                            <div class="text-center">
+                                <p>Varios colores.</p>
                             </div>
                         </div>
                     </div>
@@ -259,7 +372,8 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><p>Super delicadas.</p>
+                            <div class="text-center">
+                                <p>Super delicadas.</p>
                             </div>
                         </div>
                     </div>
@@ -287,7 +401,8 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><p>Y super originales!</p>
+                            <div class="text-center">
+                                <p>Y super originales!</p>
                             </div>
                         </div>
                     </div>

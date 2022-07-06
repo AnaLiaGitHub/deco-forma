@@ -12,6 +12,7 @@ $colorGreen: #dcf9e4;
 $colorYellow: #fdfee0;
 $colorOrange: #fff4e1;
 $colorRed: #ffe4e1;
+$colorCemento: #2f4f4f;
 
 a {
     text-decoration: none;
@@ -34,7 +35,7 @@ h1,
     font-family: "Exo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 500;
     line-height: 1.2;
-    color: darkslategray;
+    color: #2f4f4f;
 }
 
 h1,
@@ -148,8 +149,9 @@ p {
     .intro .intro-text .intro-button {
         /* width: 100%;
         left: 0; */
-/*         position: absolute;
- */        bottom: -2rem;
+        /*         position: absolute;
+ */
+        bottom: -2rem;
     }
 }
 
@@ -170,7 +172,7 @@ p {
     background-color: $colorOrange;
     text-align: center;
     margin: 3rem auto;
-   /*  position: absolute; */
+    /*  position: absolute; */
     padding: 3rem
 }
 
@@ -180,13 +182,26 @@ p {
 
     a {
         text-decoration: none;
-        color: darkslategray;
+        color: $colorCemento;
     }
 
-    .fadeInUp {
-    animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
+    .img-nosotros {
+        background-image: url('../img/carli.png');
+        background-repeat: no-repeat;
+        width: auto !important;
+        height: 80vh;
+        padding: 20px;
+        margin: 5px auto;
+        align-content: center;
+        padding-top: 10px        
     }
+
+    /* .fadeInUp {
+        animation: fadeInUp;
+        /* referring directly to the animation's @keyframe declaration */
+        /* animation */-duration: 2s;
+        /* don't forget to set a duration! */
+    
 }
 
 .nosotros_col {
@@ -218,7 +233,7 @@ $colores: (
 
 .hover-colores {
     background: linear-gradient(90deg, $colorViolet 0%, $colorBlue 20%, $colorGreen 40%, $colorYellow 60%, $colorOrange 80%, $colorRed 100%);
-    color: darkslategrey;
+    color: $colorCemento;
 }
 
 header {
@@ -227,7 +242,6 @@ header {
     top: 0;
     z-index: 1030;
     width: 100%;
-    /* box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%); */
     opacity: 0.8;
 
     .logo {
@@ -243,17 +257,6 @@ header {
         @extend .hover-colores
     }
 
-}
-
-.img-nosotros {
-    background-image: url('../img/carli.png');
-    background-repeat: no-repeat;
-    width: auto !important;
-    height: 80vh;
-    padding: 20px;
-    margin: 5px auto;
-    align-content: center;
-    object-fit: cover;
 }
 
 #trabajos {
@@ -289,35 +292,35 @@ header {
         transition: 0.2s linear;
     }
 
-    .card-wrap:hover {
+    .card:hover {
         @extend .hover-colores
     }
 
-}
+    .card:hover .card-texto {
+        opacity: 1;
 
-#trabajos .card-wrap:hover .card-texto {
-    opacity: 1;
-
-}
-
-#trabajos .card-wrap:hover img {
-    opacity: 0.4;
-}
-
-#trabajos .card-wrap .card-texto {
-    a {
-        color: darkslategrey;
-        font-weight: 800;
-        font-size: 2rem;
-        text-decoration: none;
     }
 
-    a:hover {
-        color: whitesmoke;
-        -webkit-transition: 0.3s;
-        transition: 0.3s;
-        -webkit-text-stroke: 1px darkslategrey;
+    .card:hover img {
+        opacity: 0.4;
     }
+
+    .card .card-texto {
+        a {
+            color: $colorCemento;
+            font-weight: 700;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: whitesmoke;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            -webkit-text-stroke: 1px $colorCemento;
+        }
+    }
+
 }
 
 @mixin catalogo ($bg) {
@@ -327,11 +330,16 @@ header {
 
 #macetas {
     @include catalogo($colorGreen);
-    padding-top: 100px;
 }
 
-#luminarias-relojes {
+#luminarias {
     @include catalogo($colorViolet);
+}
+
+#relojes {
+    @include catalogo($colorOrange);
+    padding-top: 20px;
+    height: 100vh;
 }
 
 #posavasos-velas {
@@ -348,7 +356,64 @@ header {
 #taller {
     background-color: $colorYellow;
     text-align: center;
+
+    .d-line {
+        display: inline !important
+    }
+
+    a {
+        text-decoration: none;
+        color: darkslategray;
+    }
+
+    h3 {
+        font-size: 28px;
+        color: #0a0a0a;
+        text-align: center;
+        font-weight: 600;
+        position: relative;
+        margin-bottom: 45px;
+    }
 }
+
+#contacto {
+    background: linear-gradient(90deg, $colorViolet 0%, $colorBlue 20%, $colorGreen 40%, $colorYellow 60%, $colorOrange 80%, $colorRed 100%);
+    text-align: center;
+    padding: 60px 0;
+    overflow: hidden;
+
+    a {
+        text-decoration: none;
+        color: darkslategray;
+    }
+
+    #submitButton {
+        background: $colorViolet;
+        border: 2.5px solid $colorCemento;
+        text-transform: uppercase;
+        padding: 11px 32px;
+        color: $colorCemento;
+        transition: 0.3s;
+        font-size: 85%;
+        letter-spacing: 1.5px;
+        font-family: Arial;
+    }
+
+    #submitButton:hover {
+        background: linear-gradient(90deg, $colorViolet 0%, $colorBlue 20%, $colorGreen 40%, $colorYellow 60%, $colorOrange 80%, $colorRed 100%);;
+        border: 2.5px solid $colorCemento;
+        text-transform: uppercase;
+        padding: 11px 32px;
+        color: $colorCemento;
+        transition: 0.3s;
+        font-size: 85%;
+        letter-spacing: 1.5px;
+        font-family: Arial;
+    }
+
+}
+
+
 
 .bd-placeholder-img {
     font-size: 1.125rem;
@@ -369,7 +434,7 @@ header {
     background-color: rgba(0, 0, 0, .1);
     border: solid rgba(0, 0, 0, .15);
     border-width: 1px 0;
-    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    
 }
 
 .b-example-vr {
@@ -399,6 +464,24 @@ header {
     text-align: center;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
+}
+
+.box img {
+    width: 30%;
+    height: auto;
+}
+
+.box-grid {
+    margin-top: 25px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 550px) {
+    .box-grid {
+        grid-template-columns:  1fr 1fr 1fr 1fr;
+    }
 }
 
 /*# sourceMappingURL=styls.css.map */
