@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../scss/style.css">
-    <link rel="shortcut icon" href="./img/logo.jpeg" type="image/x-icon"> <!-- logo en pestaña -->
+    <link rel="shortcut icon" href="../img/logo.jpeg" type="image/x-icon"> <!-- logo en pestaña -->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- CSS only -->
@@ -25,52 +25,68 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-5">
-                <a class="navbar-brand" href="../index.html#inicio">Deco.Forma</a>
+                <a class="navbar-brand logo" href="#inicio">Deco.Forma</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation"><span
                         class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="../index.html#nosotros">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Productos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Taller</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contactanos</a></li>
+                        <li class="nav-item"><a class="nav-link my-violet" href="#nosotros">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link my-green" href="#trabajos">Catálogo</a></li>
+                        <li class="nav-item"><a class="nav-link my-blue" href="#taller">Taller</a></li>
+                        <li class="nav-item"><a class="nav-link my-yellow" href="#contact">Contactanos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/decoforma.uy/"
+                                target="_blank"><img width="24px" height="auto" src="../img/instagram.svg"
+                                    alt="instagram"></a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <section id="nosotrosp">
-        <div class="container">
-            <!-- <div class="carousel-caption">
-                
-            </div> -->
-        </div>
+    <section id="nosotros-carousel">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+                    <img src="../img/caruosel2.jpg" class="bd-placeholder-img" alt="Alianzas" width="100%" height="auto">
+                </div>
+                <div class="carousel-item">
+
+                    <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+         -->
+                    <img src="../img/caruosel4.jpg" class="bd-placeholder-img" alt="Alianzas" width="100%" height="auto">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/caruosel5.jpg" class="bd-placeholder-img" alt="Alianzas" width="100%" height="auto">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
 
-    <section class="page-section" id="contact">
-        <div class="container">
+    <section id="contacto" class="py-5">
+        <div class="container-fluid px-4 px-lg-5 mt-3">
             <!-- Contact Section Heading-->
-            <h1 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contactanos</h1>
+            <h2 style="padding-bottom: 30px;" class="fw-bolder">Contactanos</h2>
             <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Contact Section Form-->
-            <div class="row justify-content-center">
-                <div class="col-lg-8 col-xl-7">
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
+            <div class="row align-items-center">
+                <!-- Contact Section Form-->
+                <div class="col-lg-6 order-1 order-lg-2 fadeInUp">
                     <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                         <!-- Name input-->
                         <div class="form-floating mb-3">
@@ -84,7 +100,8 @@
                             <input class="form-control" id="email" type="email" placeholder="name@example.com"
                                 data-sb-validations="required,email" />
                             <label for="email">Email address</label>
-                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.
+                            </div>
                             <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                         </div>
                         <!-- Phone number input-->
@@ -92,7 +109,8 @@
                             <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
                                 data-sb-validations="required" />
                             <label for="phone">Phone number</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is
+                                required.
                             </div>
                         </div>
                         <!-- Message input-->
@@ -125,13 +143,48 @@
                             <div class="text-center text-danger mb-3">Error sending message!</div>
                         </div>
                         <!-- Submit Button-->
-                        <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                        <div class="text-center">
+                            <button id="submitButton" type="submit">Enviar</button>
+                        </div>
                     </form>
+                </div>
+                <div class="col-lg-6 fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="map mb-4 mb-lg-0">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.162365823194!2d-56.179496785041934!3d-34.9023746808679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f804b2d33107b%3A0x96c7b9f5e31dc82!2sFeria%20de%20Trist%C3%A1n%20Narvaja!5e0!3m2!1ses-419!2suy!4v1656957437632!5m2!1ses-419!2suy"
+                            width="100%" height="312px" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- inicio de footer -->
+    <section id="footer">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                        <!-- <svg class="bi" width="30" height="24">
+                            <use xlink:href="#bootstrap" />
+                        </svg> -->
+                        <img src="../img/logo.jpeg" alt="">
+                    </a>
+                    <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Site, UY</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms"><a class="text-muted" href="https://www.instagram.com/decoforma.uy/"><img
+                                width="48px" height="auto" src="../img/instagram.svg" alt="instagram"></a></li>
+                </ul>
+            </footer>
+        </div>
+    </section>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 
 </body>
 
