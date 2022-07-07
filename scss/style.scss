@@ -55,6 +55,82 @@ h1,
         font-size: 3.5rem;
         color: darkslategrey;
     }
+
+    h2,
+    .h2 {
+        font-size: 2rem;
+    }
+
+    h3,
+    .h3 {
+        font-size: 1.75rem;
+    }
+
+    h4,
+    .h4 {
+        font-size: 1.5rem;
+    }
+
+    .img-nosotros {
+        max-width: 150px !important;
+    }
+
+    .intro .intro-text {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .intro .intro-img {
+        width: 100%;
+        float: right;
+    }
+
+    .intro .intro-text {
+        /* left: 0; */
+        /* width: 100% */
+        margin-top: 3rem;
+        padding: 3rem;
+        /* position: absolute; */
+    }
+
+    .intro .intro-text .intro-button {
+        /* width: 100%;
+        left: 0; */
+        /*         position: absolute;
+ */
+        bottom: -2rem;
+    }
+
+    /* .img-nosotros {
+        max-width: 850px !important;
+    } */
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+
+    .img-nosotros {
+        max-width: 480px !important;
+    }
+}
+
+@media (min-width: 750px) {
+    .intro .intro-text {
+        width: 100%;
+    }
+}
+
+@media (min-width: 550px) {
+    .box-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .img-nosotros {
+        max-width: 100px;
+    }
 }
 
 h2,
@@ -62,38 +138,15 @@ h2,
     font-size: calc(1.325rem + 0.9vw);
 }
 
-@media (min-width: 1200px) {
-
-    h2,
-    .h2 {
-        font-size: 2rem;
-    }
-}
-
 h3,
 .h3 {
     font-size: calc(1.3rem + 0.6vw);
 }
 
-@media (min-width: 1200px) {
-
-    h3,
-    .h3 {
-        font-size: 1.75rem;
-    }
-}
 
 h4,
 .h4 {
     font-size: calc(1.275rem + 0.3vw);
-}
-
-@media (min-width: 1200px) {
-
-    h4,
-    .h4 {
-        font-size: 1.5rem;
-    }
 }
 
 h5,
@@ -138,41 +191,6 @@ p {
     position: relative;
 }
 
-@media (min-width: 992px) {
-    .intro .intro-img {
-        width: 100%;
-        float: right;
-    }
-
-    .intro .intro-text {
-        /* left: 0; */
-        /* width: 100% */
-        margin-top: 3rem;
-        padding: 3rem;
-        /* position: absolute; */
-    }
-
-    .intro .intro-text .intro-button {
-        /* width: 100%;
-        left: 0; */
-        /*         position: absolute;
- */
-        bottom: -2rem;
-    }
-}
-
-@media (min-width: 1200px) {
-    .intro .intro-text {
-        width: 100%;
-    }
-}
-
-@media (min-width: 750px) {
-    .intro .intro-text {
-        width: 100%;
-    }
-}
-
 .intro-text {
     border-radius: 0.25rem;
     background-color: $colorOrange;
@@ -201,12 +219,13 @@ p {
         background-image: url('../img/carli.png');
         background-repeat: no-repeat;
         width: auto !important;
-        height: 80vh;
+        //max-width: 560px;
+        height: 530px;
         padding: 20px;
         margin: 5px auto;
         align-content: center;
-        padding-top: 10px;     
-        border: solid 2px $colorCemento;   
+        padding-top: 10px;
+        border: solid 2px $colorCemento;
     }
 
     .nosotros-texto {
@@ -217,9 +236,10 @@ p {
     /* .fadeInUp {
         animation: fadeInUp;
         /* referring directly to the animation's @keyframe declaration */
-        /* animation */-duration: 2s;
-        /* don't forget to set a duration! */
-    
+    /* animation */
+    -duration: 2s;
+    /* don't forget to set a duration! */
+
 }
 
 .nosotros_col {
@@ -367,7 +387,7 @@ header {
 }
 
 .section-catalogo {
-    height: 100vh;
+    height: 100%;
 }
 
 #nosotrosp {
@@ -424,7 +444,8 @@ header {
     }
 
     #submitButton:hover {
-        background: linear-gradient(90deg, $colorViolet 0%, $colorBlue 20%, $colorGreen 40%, $colorYellow 60%, $colorOrange 80%, $colorRed 100%);;
+        background: linear-gradient(90deg, $colorViolet 0%, $colorBlue 20%, $colorGreen 40%, $colorYellow 60%, $colorOrange 80%, $colorRed 100%);
+        ;
         border: 2.5px solid $colorCemento;
         text-transform: uppercase;
         padding: 11px 32px;
@@ -442,7 +463,7 @@ header {
     background-color: rgba(0, 0, 0, .1);
     border: solid rgba(0, 0, 0, .15);
     border-width: 1px 0;
-    
+
 }
 
 .b-example-vr {
@@ -486,43 +507,32 @@ header {
     grid-template-columns: 1fr 1fr;
 }
 
-@media (min-width: 550px) {
-    .box-grid {
-        grid-template-columns:  1fr 1fr 1fr 1fr;
-    }
-}
-
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-  }
+}
 
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
-  }
-
-  /* CUSTOMIZE THE CAROUSEL
+/* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
 /* Carousel base class */
 .carousel {
     margin-bottom: 4rem;
-  }
-  /* Since positioning the image, we need to help out the caption */
-  .carousel-caption {
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
     bottom: 3rem;
     z-index: 10;
-  }
-  
-  /* Declare heights because of positioning of img element */
-  .carousel-item {
-    height: 100vh;//32rem;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 100vh; //32rem;
     text-align: center;
-  }
+}
 
 /*# sourceMappingURL=styls.css.map */
