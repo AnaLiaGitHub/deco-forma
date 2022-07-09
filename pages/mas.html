@@ -1,50 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="../scss/style.css">
-        <link rel="shortcut icon" href="./img/logo.jpeg" type="image/x-icon"> <!-- logo en pestaña -->
-        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <title>Deco.Forma</title>
-    </head>
-    <body>
-        <header id="header">
-        
-            <div class="logo">
-                <a href="#inicio"><img src="../img/logo.jpeg" alt="logo"></a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../scss/style.css">
+    <link rel="shortcut icon" href="../img/logo.jpeg" type="image/x-icon"> <!-- logo en pestaña -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Deco.Forma</title>
+</head>
+
+<body>
+    <header id="header">
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand logo" href="../index.html#">Deco.Forma</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link my-violet" href="#nosotros">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link my-green" href="trabajos.html">Catálogo</a></li>
+                        <li class="nav-item"><a class="nav-link my-blue" href="taller.html">Taller</a></li>
+                        <li class="nav-item"><a class="nav-link my-yellow" href="mas.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/decoforma.uy/"
+                                target="_blank"><img width="24px" height="auto" src="../img/instagram.svg"
+                                    alt="instagram"></a></li>
+                    </ul>
+                </div>
             </div>
-            <nav class="menu">
-                <ul>
-                    <li class="d-line"><a href="index.html"><strong>Inicio</strong></a></li>
-                    <li class="d-line"><a href="#nosotros"><strong>Conocenos</strong></a></li>
-                    <li class="d-line"><a href="#trabajos"><strong>Nuestro trabajo</strong></a></li>
-                    <li class="d-line"><a href="#taller"><strong>El taller</strong></a></li>
-                    <li class="d-line"><a href="#contacto"><strong>Contactanos</strong></a></li>
-                    <li class="d-line instagram"><a href="https://www.instagram.com/decoforma.uy/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        </nav>
+    </header>
+
+    <section id="trabajos" class="py-5">
+        <div class="container px-4 px-lg-5 mt-3">
+            <h4 class="fw-bolder mb-4">Te mostramos las más hermosas combinaciones que puedes hacer con nuestras piezas.</h2>
+                <h4 class="fw-bolder mb-4">¡Animate!</h2>
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-3 justify-content-center">
+                <div class="col mb-3 animate__animated animate__jackInTheBox">
+                    <div class="card">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="../img/maceta_velas.jpg" alt="..." />
+
+                    </div>
+                </div>
+
+                <div class="col mb-3 animate__animated animate__jackInTheBox">
+                    <div class="card">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="../img/reloj_velas.jpg" alt="..." />
+                        <!-- Product details-->
+
+                        <div class="text-center card-texto">
+                            <a class="text-violet" href="./pages/trabajos.html#luminarias-relojes">LUMINARIAS</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col mb-3 animate__animated animate__jackInTheBox">
+                    <div class="card">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="../img/velas_bandejas.jpg" alt="..." />
+                        <!-- Product details-->
+
+                        <div class="text-center card-texto">
+                            <a href="./pages/trabajos.html#macetas">VELAS</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col mb-3 animate__animated animate__jackInTheBox">
+                    <div class="card">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="../img/todoverde.jpg" alt="..." />
+                        <!-- Product details-->
+
+                        <div class="text-center card-texto">
+                            <a href="./pages/trabajos.html#macetas">RELOJES</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col mb-3 animate__animated animate__jackInTheBox">
+                    <div class="card">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="../img/plantarosa.jpg" alt="..." />
+                        <!-- Product details-->
+
+                        <div class="text-center card-texto">
+                            <a href="./pages/trabajos.html#posavasos-velas">POSA VASOS</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col mb-3 animate__animated animate__jackInTheBox">
+                    <div class="card">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="../img/cuenco.png" alt="..." />
+                        <!-- Product details-->
+
+                        <div class="text-center card-texto">
+                            <a href="./pages/trabajos.html#posavasos-velas">CONTENEDORES</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- inicio de footer -->
+    <section id="footer">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                        <img src="../img/logo.jpeg" alt="">
+                    </a>
+                    <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Site, UY</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms"><a class="text-muted" href="https://www.instagram.com/decoforma.uy/"><img
+                                width="48px" height="auto" src="../img/instagram.svg" alt="instagram"></a></li>
                 </ul>
-            </nav>
-        </header>
-
-    <div id="mas">
-        <h1>MÁS DE NUESTROS TRABAJOS</h1>
-    </div>
-
-    <!-- inicio de footer --> 
-	<footer>
-		<h3>LOGO</h3>
-		<h3>RRSS</h3>
-		<h3>CONTACTO</h3>
-	</footer>
+            </footer>
+        </div>
+    </section>
 </body>
+
 </html>
