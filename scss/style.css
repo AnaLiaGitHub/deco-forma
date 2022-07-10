@@ -421,6 +421,18 @@ header .navbar-brand:hover {
   text-align: center;
 }
 
+#taller .btn-nosotros {
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: whitesmoke;
+  background-color: darkslategray;
+  border-color: darkslategray;
+}
+
 #taller .d-line {
   display: inline !important;
 }
@@ -572,6 +584,15 @@ header .navbar-brand:hover {
 #nosotros-frases h2 {
   color: darkslategray;
   text-align: center;
+}
+
+.bg-dark {
+  background: darkslategray;
+  opacity: 0.8;
+}
+
+#footer {
+  color: white;
 }
 
 #footer .btn-nosotros {

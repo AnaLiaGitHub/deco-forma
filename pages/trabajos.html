@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../scss/style.css">
-    <link rel="shortcut icon" href="./img/logo.jpeg" type="image/x-icon"> <!-- logo en pestaña -->
+    <link rel="shortcut icon" href="../img/logo.jpeg" type="image/x-icon"> <!-- logo en pestaña -->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- CSS only -->
@@ -34,18 +34,22 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link my-violet" href="nosotros.html">Nosotros</a></li>
-                        
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle my-green" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Catálogo</a>
+                            <a class="nav-link dropdown-toggle my-green" href="#" id="dropdown01"
+                                data-bs-toggle="dropdown" aria-expanded="false">Catálogo</a>
                             <ul class="bg-dark dropdown-menu" aria-labelledby="dropdown01">
-                              <li class="nav-item"><a class="dropdown-item nav-link" href="#macetas">Macetas</a></li>
-                              <li class="nav-item"><a class="dropdown-item nav-link" href="#relojes">Relojes</a></li>
-                              <li class="nav-item"><a class="dropdown-item nav-link" href="#luminarias">Luminarias</a></li>
-                              <li class="nav-item"><a class="dropdown-item nav-link" href="#velas">Velas</a></li>
-                              <li class="nav-item"><a class="dropdown-item nav-link" href="#posavasos">Posa vasos</a></li>
-                              <li class="nav-item"><a class="dropdown-item nav-link" href="#contenedores">Contenedores</a></li>
+                                <li class="nav-item"><a class="dropdown-item nav-link" href="#macetas">Macetas</a></li>
+                                <li class="nav-item"><a class="dropdown-item nav-link" href="#relojes">Relojes</a></li>
+                                <li class="nav-item"><a class="dropdown-item nav-link" href="#luminarias">Luminarias</a>
+                                </li>
+                                <li class="nav-item"><a class="dropdown-item nav-link" href="#velas">Velas</a></li>
+                                <li class="nav-item"><a class="dropdown-item nav-link" href="#posavasos">Posa vasos</a>
+                                </li>
+                                <li class="nav-item"><a class="dropdown-item nav-link"
+                                        href="#contenedores">Contenedores</a></li>
                             </ul>
-                          </li>
+                        </li>
 
 
                         <li class="nav-item"><a class="nav-link my-blue" href="taller.html">Taller</a></li>
@@ -65,27 +69,6 @@
             <div class="row gx-4 gx-lg row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                 <div class="col mb-3 animate__animated animate__jackInTheBox">
                     <div class="card h-100">
-                        <!-- Product image-->
-                        <img class="card-img-top" src="../img/maceta_marmolada.jpg" alt="..." />
-                        <!-- Product details-->
-                        <div class="card-body p-4">
-                            <div class="text-center">
-                                <!-- Product name-->
-                                <h5 class="fw-bolder">Chica</h5>
-                                <!-- Product price-->
-                                $40.00 - $80.00
-                            </div>
-                        </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center">
-                                <p>Macetas para lucir tus plantas.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3 animate__animated animate__jackInTheBox">
-                    <div class="card h-100">
                         <!-- Sale badge-->
                         <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
                         </div>
@@ -95,9 +78,10 @@
                         <div class="card-body p-4">
                             <div class="text-center">
                                 <!-- Product name-->
-                                <h6><strong>Medidas:</strong> 9,5cm de alto x 10,5cm de diámetro.
-                                    Cuentan con desagüe.
-                                    Disponibles en nuestros 5 colores.</h6>
+                                <h5 class="fw-bolder">Circular</h5>
+                                <p>Cuentan con desagüe.</p>
+                                <p>Disponibles en nuestros 5 colores.</p>
+                                <p>9,5cm de alto x 10,5cm de diámetro.</p>
                                 <!-- Product price-->
                                 <span class="text-muted text-decoration-line-through">$50.00</span>
                                 $25.00
@@ -121,7 +105,7 @@
                         <div class="card-body p-4">
                             <div class="text-center">
                                 <!-- Product name-->
-                                <h5 class="fw-bolder">Mediana</h5>
+                                <h5 class="fw-bolder">Cuadrada</h5>
                                 <!-- Product price-->
                                 <span class="text-muted text-decoration-line-through">$50.00</span>
                                 $25.00
@@ -145,15 +129,36 @@
                                 <!-- Product name-->
                                 <h5 class="fw-bolder">Grande</h5>
                                 <!-- Product reviews-->
-                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                <!-- <div class="d-flex justify-content-center small text-warning mb-2">
                                     <div class="bi-star-fill"></div>
                                     <div class="bi-star-fill"></div>
                                     <div class="bi-star-fill"></div>
                                     <div class="bi-star-fill"></div>
                                     <div class="bi-star-fill"></div>
-                                </div>
+                                </div> -->
                                 <!-- Product price-->
                                 $40.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <p>Macetas para lucir tus plantas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3 animate__animated animate__jackInTheBox">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="../img/maceta_marmolada.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Marmolada xl</h5>
+                                <!-- Product price-->
+                                $600.00
                             </div>
                         </div>
                         <!-- Product actions-->
@@ -228,26 +233,19 @@
                                 <!-- Product name-->
                                 <h5 class="fw-bolder">Grande</h5>
                                 <!-- Product reviews-->
-                                <div class="d-flex justify-content-center small text-warning mb-2">
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <!-- <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div> -->
-                                </div>
-                                <!-- Product price-->
-                                $40.00
-                            </div>
+                            <!-- Product price-->
+                            $40.00
                         </div>
-                        <!-- Product actions-->
-                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center">
-                                <p>Con o sin las guías de números y en el color que mas te guste.</p>
-                            </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <p>Con o sin las guías de números y en el color que mas te guste.</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -311,13 +309,13 @@
                                 <!-- Product name-->
                                 <h5 class="fw-bolder">Grande</h5>
                                 <!-- Product reviews-->
-                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                <!-- <div class="d-flex justify-content-center small text-warning mb-2">
                                     <div class="bi-star-fill"></div>
                                     <div class="bi-star-fill"></div>
                                     <div class="bi-star-fill"></div>
                                     <div class="bi-star-fill"></div>
                                     <div class="bi-star-fill"></div>
-                                </div>
+                                </div> -->
                                 <!-- Product price-->
                                 $40.00
                             </div>
@@ -394,13 +392,13 @@
                                 <!-- Product name-->
                                 <h5 class="fw-bolder">Grande</h5>
                                 <!-- Product reviews-->
-                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                <!-- <div class="d-flex justify-content-center small text-warning mb-2">
                                     <div class="bi-star-fill"></div>
                                     <div class="bi-star-fill"></div>
                                     <div class="bi-star-fill"></div>
                                     <div class="bi-star-fill"></div>
                                     <div class="bi-star-fill"></div>
-                                </div>
+                                </div> -->
                                 <!-- Product price-->
                                 $40.00
                             </div>
@@ -424,14 +422,14 @@
                 <div class="col mb-5 animate__animated animate__jackInTheBox">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="../img/velas.png" alt="..." />
+                        <img class="card-img-top" src="../img/posavasos.jpeg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
                                 <!-- Product name-->
-                                <h5 class="fw-bolder">Chica</h5>
+                                <!-- <h5 class="fw-bolder">Chica</h5> -->
                                 <!-- Product price-->
-                                $40.00 - $80.00
+                                $300.00
                             </div>
                         </div>
                         <!-- Product actions-->
@@ -445,24 +443,24 @@
                 <div class="col mb-5 animate__animated animate__jackInTheBox">
                     <div class="card h-100">
                         <!-- Sale badge-->
-                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
-                        </div>
+                        <!-- <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
+                        </div> -->
                         <!-- Product image-->
                         <img class="card-img-top" src="../img/posa-vasos.png" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
                                 <!-- Product name-->
-                                <h5 class="fw-bolder">Mediana</h5>
+                                <!-- <h5 class="fw-bolder">Mediana</h5> -->
                                 <!-- Product price-->
-                                <span class="text-muted text-decoration-line-through">$50.00</span>
-                                $25.00
+                                <!-- <span class="text-muted text-decoration-line-through">$50.00</span> -->
+                                $300.00
                             </div>
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                             <div class="text-center">
-                                <p>Super delicadas.</p>
+                                <p>Con superficie ante deslizante.</p>
                             </div>
                         </div>
                     </div>
@@ -470,28 +468,21 @@
                 <div class="col mb-5 animate__animated animate__jackInTheBox">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="../img/luminarias.png" alt="..." />
+                        <img class="card-img-top" src="../img/posa-vasos-rosa.png" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
                                 <!-- Product name-->
-                                <h5 class="fw-bolder">Grande</h5>
+                                <!-- <h5 class="fw-bolder">Grande</h5> -->
                                 <!-- Product reviews-->
-                                <div class="d-flex justify-content-center small text-warning mb-2">
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                </div>
                                 <!-- Product price-->
-                                $40.00
+                                $300.00
                             </div>
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                             <div class="text-center">
-                                <p>Y super originales!</p>
+                                <p>Pedilos en el color que quieras!</p>
                             </div>
                         </div>
                     </div>
@@ -502,25 +493,63 @@
 
     <section id="contenedores" class="py-3 section-catalogo">
         <div class="container py-5">
-            <h2 class="fw-bolder mb-4">Posa vasos</h2>
+            <h2 class="fw-bolder mb-4">Contenedores</h2>
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                 <div class="col mb-5 animate__animated animate__jackInTheBox">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="../img/velas.png" alt="..." />
+                        <img class="card-img-top" src="../img/cuenco.png" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
                                 <!-- Product name-->
-                                <h5 class="fw-bolder">Chica</h5>
+                                <h5 class="fw-bolder">Cuencos</h5>
                                 <!-- Product price-->
-                                $40.00 - $80.00
+                                $400
                             </div>
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                             <div class="text-center">
-                                <p>Varios colores.</p>
+                                <p>Pieza multiusos.</p>
+                                <p>Te dejo algunas ideas! 👇🏼</p>
+                                <p>Terrario.</p>
+                                <p>Centro de mesa.</p>
+                                <p>Frutero.</p>
+                                <p>Ecofogon.</p>
+                                <p>20 cm de diámetro</p>
+                                <p>8 cm de alto</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5 animate__animated animate__jackInTheBox">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="../img/fuente.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Cuenco xl</h5>
+                                <!-- Product reviews-->
+                                <!-- <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div> -->
+                                <!-- Product price-->
+                                $300.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <p>Dale el uso que tu quieras‼️</p>
+                                <p>Frutero 🍊🍇🍎🥝</p>
+                                <p>Recibidor 📿</p>
+                                <p>Centro de mesa 🛋️</p>
+                                <p>23 cm de diámetro</p>
+                                <p>8 cm de altura</p>
                             </div>
                         </div>
                     </div>
@@ -531,15 +560,15 @@
                         <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
                         </div>
                         <!-- Product image-->
-                        <img class="card-img-top" src="../img/posa-vasos.png" alt="..." />
+                        <img class="card-img-top" src="../img/bandeja_ovalada.jpeg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
                                 <!-- Product name-->
-                                <h5 class="fw-bolder">Mediana</h5>
+                                <h5 class="fw-bolder">Bandeja ovalada</h5>
                                 <!-- Product price-->
-                                <span class="text-muted text-decoration-line-through">$50.00</span>
-                                $25.00
+                                <span class="text-muted text-decoration-line-through">$350.00</span>
+                                $250.00
                             </div>
                         </div>
                         <!-- Product actions-->
@@ -553,22 +582,19 @@
                 <div class="col mb-5 animate__animated animate__jackInTheBox">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top" src="../img/luminarias.png" alt="..." />
+                        <img class="card-img-top" src="../img/bandejas.jpeg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
                                 <!-- Product name-->
-                                <h5 class="fw-bolder">Grande</h5>
+                                <h5 class="fw-bolder">Bandeja</h5>
                                 <!-- Product reviews-->
-                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                <!-- <div class="d-flex justify-content-center small text-warning mb-2">
                                     <div class="bi-star-fill"></div>
                                     <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                    <div class="bi-star-fill"></div>
-                                </div>
+                                </div> -->
                                 <!-- Product price-->
-                                $40.00
+                                $300.00
                             </div>
                         </div>
                         <!-- Product actions-->
@@ -579,6 +605,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>

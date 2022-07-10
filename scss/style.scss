@@ -459,6 +459,18 @@ header {
     background-color: $colorYellow;
     text-align: center;
 
+    .btn-nosotros {
+        font-weight: 700;
+        font-size: 0.8rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        color: whitesmoke;
+        background-color: $colorCemento;
+        border-color: $colorCemento
+    }
+    
     .d-line {
         display: inline !important
     }
@@ -606,8 +618,14 @@ header {
 
 }
 
+.bg-dark {
+    background: $colorCemento;
+    opacity: 0.8;
+}
+
 #footer {
 
+    color: white;
     .btn-nosotros {
         font-weight: 700;
         font-size: 0.8rem;
