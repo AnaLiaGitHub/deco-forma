@@ -264,6 +264,7 @@ p {
 #nosotros .img-nosotros {
   background-image: url("../img/carli.png");
   background-repeat: no-repeat;
+  background-position: center center;
   width: auto !important;
   height: 530px;
   padding: 20px;

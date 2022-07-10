@@ -277,7 +277,8 @@ p {
 
     .img-nosotros {
         background-image: url('../img/carli.png');
-        background-repeat: no-repeat;
+        background-repeat:no-repeat;
+        background-position: center center;
         width: auto !important;
         //max-width: 560px;
         height: 530px;
@@ -470,7 +471,7 @@ header {
         background-color: $colorCemento;
         border-color: $colorCemento
     }
-    
+
     .d-line {
         display: inline !important
     }
