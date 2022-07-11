@@ -215,6 +215,17 @@ p {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
+.btn-nosotros:hover {
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: darkslategray !important;
+  border-color: darkslategray;
+}
+
 #nosotros {
   /* background: linear-gradient(90deg, $colorViolet 0%, $colorBlue 20%, $colorGreen 40%, $colorYellow 60%, $colorOrange 80%, $colorRed 100%); */
   background-color: #dcf9e4;
@@ -302,7 +313,7 @@ p {
   color: #fdfee0;
 }
 
-.hover-colores, #nosotros .btn-nosotros:hover, header .navbar-brand:hover, header .nav-link:hover, #trabajos .card:hover {
+.hover-colores, .btn-nosotros:hover, #nosotros .btn-nosotros:hover, header .navbar-brand:hover, header .nav-link:hover, #trabajos .card:hover {
   background: -webkit-gradient(linear, left top, right top, from(#f5dcf9), color-stop(20%, #dce4f9), color-stop(40%, #dcf9e4), color-stop(60%, #fdfee0), color-stop(80%, #fff4e1), to(#ffe4e1));
   background: linear-gradient(90deg, #f5dcf9 0%, #dce4f9 20%, #dcf9e4 40%, #fdfee0 60%, #fff4e1 80%, #ffe4e1 100%);
   color: darkslategray;
@@ -606,5 +617,11 @@ header .navbar-brand:hover {
   color: whitesmoke;
   background-color: darkslategray;
   border-color: darkslategray;
+}
+
+#mas {
+  color: darkslategray;
+  text-align: center;
+  background-color: #f5dcf9;
 }
 /*# sourceMappingURL=style.css.map */

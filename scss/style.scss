@@ -235,6 +235,18 @@ p {
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.btn-nosotros:hover {
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    @extend .hover-colores;
+    color: $colorCemento !important; 
+    border-color: $colorCemento
+}
+
 #nosotros {
     /* background: linear-gradient(90deg, $colorViolet 0%, $colorBlue 20%, $colorGreen 40%, $colorYellow 60%, $colorOrange 80%, $colorRed 100%); */
     background-color: $colorGreen;
@@ -640,4 +652,9 @@ header {
     }
 }
 
+#mas {
+    color: $colorCemento;
+    text-align: center;
+    background-color: #f5dcf9;
+}
 /*# sourceMappingURL=styls.css.map */
