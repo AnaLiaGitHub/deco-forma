@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -319,6 +320,47 @@ p {
   color: darkslategray;
 }
 
+.back-my-violet {
+  background-color: #f5dcf9;
+  color: darkslategray;
+}
+
+.back-my-blue {
+  background-color: #dce4f9;
+  color: darkslategray;
+}
+
+.back-my-green {
+  background-color: #dcf9e4;
+  color: darkslategray;
+}
+
+.back-my-yellow {
+  background-color: #fdfee0;
+  color: darkslategray;
+}
+
+.back-my-orange {
+  background-color: #fff4e1;
+  color: darkslategray;
+}
+
+.back-my-red {
+  background-color: #ffe4e1;
+  color: darkslategray;
+}
+
+.back-my-colors {
+  background: -webkit-gradient(linear, left top, right top, from(#f5dcf9), color-stop(20%, #dce4f9), color-stop(40%, #dcf9e4), color-stop(60%, #fdfee0), color-stop(80%, #fff4e1), to(#ffe4e1));
+  background: linear-gradient(90deg, #f5dcf9 0%, #dce4f9 20%, #dcf9e4 40%, #fdfee0 60%, #fff4e1 80%, #ffe4e1 100%);
+  color: darkslategray;
+}
+
+.back-my-gray {
+  background-color: darkslategray;
+  color: gainsboro;
+}
+
 header {
   background-color: white;
   position: fixed;
@@ -429,7 +471,6 @@ header .navbar-brand:hover {
 }
 
 #taller {
-  background-color: #fdfee0;
   text-align: center;
 }
 
@@ -623,5 +664,49 @@ header .navbar-brand:hover {
   color: darkslategray;
   text-align: center;
   background-color: #f5dcf9;
+}
+.btn-flotante {
+  font-size: 16px;
+  /* Cambiar el tamaño de la tipografia */
+  text-transform: uppercase;
+  /* Texto en mayusculas */
+  font-weight: bold;
+  /* Fuente en negrita o bold */
+  color: #ffffff;
+  /* Color del texto */
+  border-radius: 5px;
+  /* Borde del boton */
+  letter-spacing: 2px;
+  /* Espacio entre letras */
+  background-color: ghostwhite;
+  /* Color de fondo */
+  padding: 9px 15px;
+  /* Relleno del boton */
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  -webkit-transition: all 300ms ease 0ms;
+  transition: all 300ms ease 0ms;
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+}
+
+.btn-flotante:hover {
+  /* background-color: #2c2fa5; */
+  /* Color de fondo al pasar el cursor */
+  -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+}
+
+@media only screen and (max-width: 600px) {
+  .btn-flotante {
+    font-size: 14px;
+    padding: 12px 20px;
+    bottom: 20px;
+    right: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
